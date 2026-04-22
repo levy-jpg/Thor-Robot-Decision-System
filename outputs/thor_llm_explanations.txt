@@ -1,0 +1,29 @@
+THOR LLM Explanations
+
+1st attempt:
+SUCCESS CASE OUTPUT:
+ {'predicted_duration_sec': 2.303473063485482, 'success_probability': 0.9147058823529411, 'cluster_id': 0, 'cluster_label': 'Standard Efficient', 'rule_triggers': [], 'anomaly_flags': [], 'recommended_action': 'proceed', 'explanation': 'The predicted duration of this event is 2.30 seconds, which is within the specified range of 1-2 seconds. The anomaly flag is None, indicating that the event is expected to occur.'}
+
+RECOVERY CASE OUTPUT:
+ {'predicted_duration_sec': 29.16951094103296, 'success_probability': 0.20507568602374526, 'cluster_id': 2, 'cluster_label': 'High-Friction Failure Mode', 'rule_triggers': ['RULE: obstacles+clutter → collision+failure risk', 'RULE: collision+clutter → friction breakdown'], 'anomaly_flags': ['ANOMALY: predicted extreme duration', 'ANOMALY: collision spike', 'ANOMALY: friction combo (collision+clutter)'], 'recommended_action': 'recover', 'explanation': 'The predicted duration seconds for this anomaly are 29.17 seconds, which is within the acceptable range of 15 to 30 seconds. The success probability for this anomaly is 0.21, which is lower than the threshold of 0.50.'}
+
+SUCCESS CASE EXPLANATION:
+ The predicted duration of this event is 2.30 seconds, which is within the specified range of 1-2 seconds. The anomaly flag is None, indicating that the event is expected to occur.
+
+RECOVERY CASE EXPLANATION:
+ The predicted duration seconds for this anomaly are 29.17 seconds, which is within the acceptable range of 15 to 30 seconds. The success probability for this anomaly is 0.21, which is lower than the threshold of 0.50.
+
+2nd attempt:
+SUCCESS CASE EXPLANATION:
+ I estimate ~2.3s with success probability 0.91 (Standard Efficient). Action: Proceed normally. Reason: Proceed normally as a standard efficient kitchen robot assistant.
+
+RECOVERY CASE EXPLANATION:
+ I estimate ~29.2s with success probability 0.21 (High-Friction Failure Mode). Action: Recover and replan. Reason: The high-friction failure mode in this scenario is due to obstacles and clutter, which create a high level of friction and clutter.
+
+3rd attempt:
+SUCCESS CASE EXPLANATION:
+ I estimate ~2.3s with success probability 0.91 (Standard Efficient). Action: Proceed normally. Reason: conditions appear stable with no elevated risk signals.
+
+RECOVERY CASE EXPLANATION:
+ I estimate ~29.2s with success probability 0.21 (High-Friction Failure Mode). Action: Recover and replan. Reason: anomaly signals indicate elevated collision and failure risk.
+
