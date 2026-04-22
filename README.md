@@ -59,6 +59,34 @@ The system follows a structured decision pipeline:
   - → Robot switches to recovery behaviour  
 
 ---
+## System Diagram
+
+![Pipeline](images/storyboard.png)
+
+---
+## Results
+### Task 1: Regression Performance (Task Duration Prediction)
+
+The regression model estimates how long a task will take to complete.
+
+- **R² Score:** ~0.88  
+- **Mean Absolute Error (MAE):** ~0.29  
+- **Root Mean Squared Error (RMSE):** ~0.41  
+
+Random Forest Regression was selected due to its ability to capture non-linear relationships between environmental features and task duration, providing accurate and robust predictions.
+
+### Task 2: Classification Performance (Success Prediction)
+
+The classification model predicts whether a task will succeed or fail based on environmental and interaction features.
+
+| Model                     | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|--------------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression      | 0.72     | 0.64      | 0.65   | 0.65     | 0.79    |
+| Random Forest Classifier | 0.69     | 0.61      | 0.62   | 0.61     | 0.78    |
+
+Logistic Regression was selected as the final model due to its stronger overall performance and more stable probability estimates, which are important for decision-making under uncertainty.
+
+---
 
 ## Design Considerations
 
