@@ -1,4 +1,4 @@
-# THOR Robot Decision System
+# THOR Robot Decision System 🤖
 
 ## Overview
 
