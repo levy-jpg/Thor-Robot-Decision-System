@@ -46,6 +46,12 @@ The system follows a structured decision pipeline:
 
 ---
 
+## System Diagram
+
+![Pipeline](images/storyboard.png)
+
+---
+
 ## Example Behaviour
 
 - **Success Case**
@@ -57,11 +63,6 @@ The system follows a structured decision pipeline:
   - Low success probability  
   - High collision / clutter signals  
   - → Robot switches to recovery behaviour  
-
----
-## System Diagram
-
-![Pipeline](images/storyboard.png)
 
 ---
 ## Results
