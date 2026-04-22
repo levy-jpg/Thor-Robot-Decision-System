@@ -98,13 +98,14 @@ The system operates on structured inputs and does not rely on voice interaction,
 ## Project Structure
 thor-robot-decision-system/
 │
-├── notebook/
-│ └── thor_pipeline.ipynb
+├── data/
 ├── images/
-│ └── storyboard.png
-├── data
+├── notebook/
+│   └── thor-robot-decision-system.ipynb
+├── outputs/
+├── LICENSE
+├── README.md
 ├── requirements.txt
-└── README.md
 
 ---
 
