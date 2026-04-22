@@ -49,6 +49,7 @@ The system follows a structured decision pipeline:
 ## System Diagram
 
 ![Pipeline](images/storyboard.png)
+The system integrates multiple models into a unified decision pipeline, combining predictive outputs with rule-based logic to determine safe and adaptive robot behaviour.
 
 ---
 
@@ -86,6 +87,14 @@ The classification model predicts whether a task will succeed or fail based on e
 | Random Forest Classifier | 0.69     | 0.61      | 0.62   | 0.61     | 0.78    |
 
 Logistic Regression was selected as the final model due to its stronger overall performance and more stable probability estimates, which are important for decision-making under uncertainty.
+
+---
+
+### Key Insight
+
+Task duration is primarily influenced by movement efficiency and environmental complexity, while task success is driven by interaction difficulty and high-friction conditions. 
+
+Combining these signals allows the system to make more robust and risk-aware decisions than using any single model in isolation.
 
 ---
 
