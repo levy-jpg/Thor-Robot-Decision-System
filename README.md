@@ -119,7 +119,7 @@ The system operates on structured inputs and does not rely on voice interaction,
 - pandas  
 - numpy  
 - matplotlib  
-- TinyLlama-1.1B-Chat-v1.0 transformer (for LLM experiments)
+- TinyLlama-1.1B-Chat-v1.0 transformer (for LLM experiments) ⚙️
 
 ---
 
