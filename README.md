@@ -88,8 +88,9 @@ The classification model predicts whether a task will succeed or fail based on e
 
 Logistic Regression was selected as the final model due to its stronger overall performance and more stable probability estimates, which are important for decision-making under uncertainty.
 
-### Confusion Matrix
-<img width="1434" height="1106" alt="success_confusion_matrix" src="https://github.com/user-attachments/assets/76e810ff-bfe0-4199-892c-0dfacead3764" />
+### Success Prediction Confusion Matrix
+
+<img src="https://github.com/user-attachments/assets/76e810ff-bfe0-4199-892c-0dfacead3764" width="500"/>
 
 ---
 
